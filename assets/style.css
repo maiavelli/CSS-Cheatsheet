@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    box-sizing: border-box;
+    background-color: rgb(253, 198, 198);
+}
+
+h1 {
+    font-size: 30px;
+    color: mediumslateblue;
+    text-align: center;
+    margin: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header>p {
+    color: white;
+    font-size: 15px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    color: mediumslateblue;
+    border: 5px solid white;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    color: mediumslateblue;
+}
+
+pre {
+    font-size: 15px;
+    color: white;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.container>* {
+    flex: 1 1 30%;
+}
+.container h2 {
+    position: relative;
+    margin-top: -20px;
+}
+
+.flexbox {
+  
+    margin: 20px;
+    border: 3px dashed white;
+    height: 350px;
+}
+
+.flexbox p {
+    padding: 10px;
+}
+
+.flexbox>pre {
+    background: linear-gradient(#e66465, #9198e5);
+    padding: 20px 12px 12px 20px;
+    border-radius: 15px; 
+    margin: 5px;   
+}
+
+footer {
+    color: mediumslateblue;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 996px) {
+    .container {
+        flex-direction: row;
+        flex: 0 1 50%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        flex-direction: row;
+        flex: 0 1 100%}
+}
